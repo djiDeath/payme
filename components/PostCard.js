@@ -55,7 +55,6 @@ export default function PostCard({ post }) {
             <li>
                 <h3>{post.title}</h3>
                 <p>{post.content}</p>
-                <small>{new Date(post.createdAt).toLocaleDateString()}</small>
                 <br />
                 {!post.published ? (
                     <button type="button" onClick={() => publishPost(post._id)}>

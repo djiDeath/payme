@@ -24,7 +24,6 @@ export default function AddPost() {
             title,
             content,
             published: false,
-            createdAt: new Date().toISOString(),
         };
         // save the post
         let response = await fetch('/api/posts', {
