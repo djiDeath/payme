@@ -6,8 +6,13 @@ export default function Nav() {
     return (
         <nav className={styles.nav}>
             <ul className={styles.list}>
+                 <li className={styles.item}>
+                    <Link  href="/">
+                        Home
+                    </Link>
+                </li>
                 <li className={styles.item}>
-                    <Link legacyBehavior href="/">
+                    <Link legacyBehavior href="/home">
                         <a>Home</a>
                     </Link>
                 </li>
